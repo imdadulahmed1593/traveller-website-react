@@ -1,0 +1,31 @@
+.searchResult {
+  display: flex;
+
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+.searchResult > img {
+  width: 30%;
+  object-fit: contain;
+  margin-right: 30px;
+}
+.searchResult__info {
+  line-height: 2;
+  padding-right: 30px;
+}
+
+.searchResult__info > h2 {
+  font-size: 16px;
+}
+
+.searchResult__info > p {
+  font-size: 14px;
+  color: lightgray;
+}
+
+.searchResult__infoPrice {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: lightgray;
+}

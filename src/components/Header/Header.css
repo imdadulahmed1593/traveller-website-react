@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  z-index: 100;
+  padding: 30px 40px;
+  align-items: center;
+}
+.header__left > img {
+  object-fit: contain;
+  height: 50px;
+  filter: brightness(10);
+}
+.header__left {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* .header__searchInput {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px 30px;
+  /* color: #fff; */
+/* width: 250px; */
+/* } */
+
+.header__searchInput > input {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px 30px;
+  /* color: #fff; */
+  width: 250px;
+}
+
+.header__right {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header__button {
+  background: none;
+  border: none;
+  outline-width: 0;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header__button--login {
+  background: #f9a51a;
+  border-radius: 5px;
+  padding: 12px 29px;
+  display: flex;
+  align-items: center;
+  border: none;
+  margin-left: 20px;
+  outline-width: 0px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.header__button--login > button:hover {
+  background: rgb(249, 163, 26);
+}

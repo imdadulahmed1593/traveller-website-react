@@ -1,0 +1,72 @@
+.header2 {
+  display: flex;
+  /* position: sticky; */
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  padding: 30px 40px;
+  align-items: center;
+}
+.header2__left > img {
+  object-fit: contain;
+  height: 50px;
+}
+.header2__left {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 60px;
+}
+/* .header2__searchInput {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    /* color: #fff; */
+/* width: 250px; */
+/* } */
+.header2__searchInput {
+  display: none;
+}
+.header2__searchInput > input {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px 30px;
+  /* color: #fff; */
+  width: 250px;
+}
+
+.header2__right {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header2__button {
+  background: none;
+  border: none;
+  outline-width: 0;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header2__button--login {
+  background: #f9a51a;
+  border-radius: 5px;
+  padding: 12px 29px;
+  display: flex;
+  align-items: center;
+  border: none;
+  margin-left: 20px;
+  outline-width: 0px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.header2__button--login > button:hover {
+  background: rgb(249, 163, 26);
+}

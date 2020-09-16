@@ -1,0 +1,81 @@
+.login__form {
+  width: 50%;
+  margin: auto;
+  height: 50%;
+}
+
+.login__form > form {
+  height: 50vh;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ababab;
+  padding: 30px;
+}
+.login__form > form > h2 {
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.login__form > form > input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
+
+.login__form > form > button {
+  background: #f9a51a;
+  border-radius: 5px;
+  padding: 12px 29px;
+  font-size: large;
+  font-weight: 600;
+  border: none;
+  margin: 10px auto;
+  outline-width: 0px;
+  cursor: pointer;
+  text-align: center;
+
+  width: 70%;
+}
+
+.login__form > form > small {
+  text-align: center;
+}
+
+.login__divider {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin: 15px auto;
+  justify-content: center;
+}
+.login__divider > hr {
+  /* border: 1 solid lightgray; */
+  /* height: 1px; */
+  width: 100px;
+  color: #ababab;
+  margin: 0px 5px;
+}
+.login__buttons > button > img {
+  object-fit: contain;
+  height: 20px;
+  float: left;
+}
+.login__buttons > button {
+  width: 25%;
+  padding: 10px 29px;
+  background: none;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  margin-left: 38%;
+  cursor: pointer;
+  /* margin: 0px auto; */
+  margin-bottom: 10px;
+}
+.newUser__toggler {
+  color: #f9a51a;
+  cursor: pointer;
+}
