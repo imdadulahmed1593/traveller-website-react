@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import Header2 from "../Header/Header2";
 import SearchResult from "../SearchResult/SearchResult";
 import "./Search.css";
 import img1 from "../../images/Image/Rectangle 26.png";
 import img2 from "../../images/Image/Rectangle 27.png";
 import img3 from "../../images/Image/Rectangle 28.png";
+
 function Search() {
   return (
     <div className="search">

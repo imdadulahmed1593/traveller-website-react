@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Header/Header";
 import "./Home.css";
 import NavigateNextIcon from "@material-ui/icons/NavigateNext";
@@ -16,7 +16,7 @@ function Home() {
       <Header />
       <div className="home__info">
         <div className="home__infoLeft">
-          <h1>Cox's bazar</h1>
+          <h1>Cox's Bazar</h1>
           <p>
             Cox's Bazar is a city, fishing port, tourism centre and district
             headquarters in southeastern Bangladesh. It is famous mostly for its

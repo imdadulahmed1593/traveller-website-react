@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Header.css";
 import logo from "../../images/Logo.png";
 import SearchIcon from "@material-ui/icons/Search";
+import { Link } from "react-router-dom";
+import { userContext } from "../../App";
 function Header() {
+  const [user, setUser] = useContext(userContext);
   return (
     <div className="header">
       <div className="header__left">
-        <img src={logo} alt="" />
+        <Link to="/">
+          <img className="header__logo" src={logo} alt="" />
+        </Link>
         <div className="header__searchInput">
           <input type="text" placeholder="Search your Destination..."></input>
         </div>
@@ -16,7 +21,16 @@ function Header() {
         <button className="header__button">Destination</button>
         <button className="header__button">Blog</button>
         <button className="header__button">Contact</button>
-        <button className="header__button--login">Login</button>
+
+        {user.email ? (
+          <p style={{ fontWeight: "bold", color: "#f9a51a" }}>
+            {user.fName || user.name || user.email}
+          </p>
+        ) : (
+          <Link to="/login">
+            <button className="header__button--login">Login</button>
+          </Link>
+        )}
       </div>
     </div>
   );

@@ -7,7 +7,7 @@
   padding: 30px 40px;
   align-items: center;
 }
-.header__left > img {
+.header__logo {
   object-fit: contain;
   height: 50px;
   filter: brightness(10);

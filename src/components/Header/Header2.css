@@ -7,7 +7,7 @@
   padding: 30px 40px;
   align-items: center;
 }
-.header2__left > img {
+.header2__logo {
   object-fit: contain;
   height: 50px;
 }

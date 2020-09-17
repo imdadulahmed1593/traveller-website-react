@@ -11,11 +11,12 @@ import { useHistory, useLocation } from "react-router-dom";
 function Login() {
   const [user, setUser] = useContext(userContext);
   const [newUser, setNewUser] = useState(false);
-  let history = useHistory();
-  let location = useLocation();
+  const history = useHistory();
+  const location = useLocation();
 
-  let { from } = location.state || { from: { pathname: "/" } };
-  var provider = new firebase.auth.GoogleAuthProvider();
+  const { from } = location.state || { from: { pathname: "/" } };
+  const provider = new firebase.auth.GoogleAuthProvider();
+  const fbProvider = new firebase.auth.FacebookAuthProvider();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -60,6 +61,24 @@ function Login() {
       .catch(function (error) {
         // Handle Errors here.
         alert(error.message);
+      });
+  };
+
+  const handleFbSignIn = () => {
+    auth
+      .signInWithPopup(fbProvider)
+      .then(function (result) {
+        // The signed-in user info.
+        var { displayName, email } = result.user;
+        setUser({ name: displayName, email: email });
+        history.replace(from);
+        // ...
+      })
+      .catch(function (error) {
+        // Handle Errors here.
+        alert(error.message);
+
+        // ...
       });
   };
   return (
@@ -121,7 +140,7 @@ function Login() {
         <hr />
       </div>
       <div className="login__buttons">
-        <button>
+        <button onClick={handleFbSignIn}>
           <img src={img1} alt="" /> Continue with Facebook
         </button>
         <br />
