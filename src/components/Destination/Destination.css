@@ -44,9 +44,9 @@
   border-radius: 5px;
   padding: 10px 10px;
 
-  border: none;
+  border: 1px solid lightgray;
 }
-.form__calendarLeft > input {
+/* .form__calendarLeft > input {
   background: #f2f2f2;
   border-radius: 5px;
   padding: 10px 10px;
@@ -57,7 +57,7 @@
   border-radius: 5px;
   padding: 10px 10px;
   border: none;
-}
+} */
 .form__calendar {
   display: flex;
   align-items: center;
@@ -71,6 +71,7 @@
 .form__calendarRight {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .destination__formButton {
