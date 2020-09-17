@@ -5,15 +5,17 @@ import "./Search.css";
 import img1 from "../../images/Image/Rectangle 26.png";
 import img2 from "../../images/Image/Rectangle 27.png";
 import img3 from "../../images/Image/Rectangle 28.png";
+import { userContext } from "../../App";
 
 function Search() {
+  const [user, setUser] = useContext(userContext);
   return (
     <div className="search">
       <Header2 />
       <div className="search__info">
         <hr />
         <p>252 stays Apr 13-17 3 guests</p>
-        <h2>Stay in Cox’s Bazar</h2>
+        <h2>Stay in {user.destination}</h2>
         <div className="search__results">
           <div className="search__resultsInfo">
             <SearchResult image={img1} />
@@ -29,7 +31,7 @@ function Search() {
                   width="433"
                   height="508"
                   id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=coxsbaza&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  src={`https://maps.google.com/maps?q=${user.destination}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
                   frameborder="0"
                   scrolling="no"
                   marginheight="0"
