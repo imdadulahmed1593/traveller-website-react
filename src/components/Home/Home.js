@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../Header/Header";
 import "./Home.css";
 import NavigateNextIcon from "@material-ui/icons/NavigateNext";
@@ -8,9 +8,8 @@ import HomeCard from "../HomeCard/HomeCard";
 import img1 from "../../images/Image/Rectangle1.png";
 import img2 from "../../images/Image/Sreemongol.png";
 import img3 from "../../images/Image/sundorbon.png";
-import img4 from "../../images/Image/Sajek.png";
+
 import { Link } from "react-router-dom";
-import Header3 from "../Header3";
 
 function Home() {
   return (
@@ -18,11 +17,13 @@ function Home() {
       <Header />
       <div className="home__info">
         <div className="home__infoLeft">
-          <h1>Cox's Bazar</h1>
+          <h1>Travel Guru</h1>
           <p>
-            Cox's Bazar is a city, fishing port, tourism centre and district
-            headquarters in southeastern Bangladesh. It is famous mostly for its
-            long natural sandy beach, and it ...
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+            laudantium, provident architecto repudiandae assumenda neque non
+            sed, vitae minima atque possimus sapiente corporis sint. Quidem ab,
+            explicabo sapiente dolorum cum perspiciatis, labore dolore
+            voluptates eius nobis ratione, at sint praesentium....
           </p>
           <Link to="/destinations/none">
             <button className="booking__btn">

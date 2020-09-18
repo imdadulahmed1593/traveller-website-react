@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Header.css";
 import logo from "../../images/Logo.png";
-import SearchIcon from "@material-ui/icons/Search";
+
 import { Link } from "react-router-dom";
 import { userContext } from "../../App";
 function Header() {
@@ -20,9 +20,15 @@ function Header() {
         <Link to="/">
           <button className="header__button">Home</button>
         </Link>
-        <button className="header__button">Destination</button>
-        <button className="header__button">Blog</button>
-        <button className="header__button">Contact</button>
+        <Link to="/">
+          <button className="header__button">Destination</button>
+        </Link>
+        <Link to="/">
+          <button className="header__button">Blog</button>
+        </Link>
+        <Link to="/">
+          <button className="header__button">Contact</button>
+        </Link>
 
         {user.email ? (
           <p

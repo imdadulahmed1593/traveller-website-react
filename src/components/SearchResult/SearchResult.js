@@ -7,13 +7,13 @@ function SearchResult({ image, id, title, description, rating, price }) {
       <img src={image} alt="" />
 
       <div className="searchResult__info">
-        <h2>Light bright airy stylish apt & safe peaceful stay</h2>
-        <p>4 guests 2 bedrooms 2 beds 2 baths</p>
+        <h2>{title}</h2>
+        <p>{description}</p>
         <p>Wifi Air conditioning Kitchen</p>
         <p>Cancellation fexibility availiable</p>
         <div className="searchResult__infoPrice">
-          <p>⭐4.9 (20)</p>
-          <p>$34/night</p>
+          <p>⭐{rating}</p>
+          <p>{price}</p>
           <p>$167 total</p>
         </div>
       </div>

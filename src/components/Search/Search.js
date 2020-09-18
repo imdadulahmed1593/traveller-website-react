@@ -1,13 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Header2 from "../Header/Header2";
 import SearchResult from "../SearchResult/SearchResult";
 import "./Search.css";
-import img1 from "../../images/Image/Rectangle 26.png";
-import img2 from "../../images/Image/Rectangle 27.png";
-import img3 from "../../images/Image/Rectangle 28.png";
+
 import { userContext } from "../../App";
+import fakeData from "../fakedata";
 
 function Search() {
+  const first3 = fakeData.slice(0, 3);
+  const [hotels, setHotels] = useState(first3);
   const [user, setUser] = useContext(userContext);
   return (
     <div className="search">
@@ -18,9 +19,17 @@ function Search() {
         <h2>Stay in {user.destination}</h2>
         <div className="search__results">
           <div className="search__resultsInfo">
-            <SearchResult image={img1} />
-            <SearchResult image={img2} />
-            <SearchResult image={img3} />
+            {hotels.map((hotel) => (
+              <SearchResult
+                key={hotel.id}
+                image={hotel.image}
+                id={hotel.id}
+                title={hotel.title}
+                description={hotel.description}
+                rating={hotel.rating}
+                price={hotel.price}
+              />
+            ))}
           </div>
           <div className="search__resultsImg">
             <div class="mapouter">

@@ -17,10 +17,18 @@ function Header2() {
         </div>
       </div>
       <div className="header2__right">
-        <button className="header2__button">News</button>
-        <button className="header2__button">Destination</button>
-        <button className="header2__button">Blog</button>
-        <button className="header2__button">Contact</button>
+        <Link to="/">
+          <button className="header2__button">Home</button>
+        </Link>
+        <Link to="/">
+          <button className="header2__button">Destination</button>
+        </Link>
+        <Link to="/">
+          <button className="header2__button">Blog</button>
+        </Link>
+        <Link to="/">
+          <button className="header2__button">Contact</button>
+        </Link>
         {user.email ? (
           <p
             style={{ margin: "auto 0px", fontWeight: "bold", color: "#f9a51a" }}
