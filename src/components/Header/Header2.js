@@ -22,7 +22,9 @@ function Header2() {
         <button className="header2__button">Blog</button>
         <button className="header2__button">Contact</button>
         {user.email ? (
-          <p style={{ fontWeight: "bold", color: "#f9a51a" }}>
+          <p
+            style={{ margin: "auto 0px", fontWeight: "bold", color: "#f9a51a" }}
+          >
             {user.fName || user.name || user.email}
           </p>
         ) : (

@@ -70,3 +70,16 @@
 .header2__button--login > button:hover {
   background: rgb(249, 163, 26);
 }
+@media (max-width: 1000px) {
+  .header2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header2__left {
+    width: 100%;
+  }
+  .header2__right {
+    width: 60%;
+    margin-top: 2rem;
+  }
+}

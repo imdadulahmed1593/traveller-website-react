@@ -38,3 +38,11 @@
     width: 30vw;
   }
 }
+
+@media (max-width: 500px) {
+  .homecard {
+    width: 80vw;
+    margin: 20px auto;
+    padding: 20px 0px;
+  }
+}

@@ -87,3 +87,10 @@
     justify-content: space-evenly;
   }
 }
+
+@media (max-width: 500px) {
+  .home__infoRight {
+    display: flex;
+    flex-direction: column;
+  }
+}

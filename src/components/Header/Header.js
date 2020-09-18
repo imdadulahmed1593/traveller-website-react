@@ -25,7 +25,9 @@ function Header() {
         <button className="header__button">Contact</button>
 
         {user.email ? (
-          <p style={{ fontWeight: "bold", color: "#f9a51a" }}>
+          <p
+            style={{ margin: "auto 0px", fontWeight: "bold", color: "#f9a51a" }}
+          >
             {user.fName || user.name || user.email}
           </p>
         ) : (
