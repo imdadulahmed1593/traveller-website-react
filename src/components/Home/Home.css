@@ -3,7 +3,7 @@
     url("../../images/Image/Rectangle1.png");
 
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
   padding-bottom: 20px;
 }
 
-.home__infoLeft > button {
+.booking__btn {
   background: #f9a51a;
   border-radius: 5px;
   padding: 12px 29px;

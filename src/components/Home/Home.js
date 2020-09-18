@@ -9,6 +9,7 @@ import img1 from "../../images/Image/Rectangle1.png";
 import img2 from "../../images/Image/Sreemongol.png";
 import img3 from "../../images/Image/sundorbon.png";
 import img4 from "../../images/Image/Sajek.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -22,9 +23,11 @@ function Home() {
             headquarters in southeastern Bangladesh. It is famous mostly for its
             long natural sandy beach, and it ...
           </p>
-          <button>
-            Booking <ArrowForwardIcon />
-          </button>
+          <Link to="/destinations/none">
+            <button className="booking__btn">
+              Booking <ArrowForwardIcon />
+            </button>
+          </Link>
         </div>
         <div className="home__infoRight">
           <HomeCard title="Cox’s Bazar" imgUrl={img1} />

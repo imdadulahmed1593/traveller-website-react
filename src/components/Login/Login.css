@@ -5,7 +5,7 @@
 }
 
 .login__form > form {
-  height: 50vh;
+  /* height: 50vh; */
   width: 60%;
   margin: auto;
   display: flex;
