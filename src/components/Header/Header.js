@@ -17,7 +17,9 @@ function Header() {
         </div>
       </div>
       <div className="header__right">
-        <button className="header__button">News</button>
+        <Link to="/">
+          <button className="header__button">Home</button>
+        </Link>
         <button className="header__button">Destination</button>
         <button className="header__button">Blog</button>
         <button className="header__button">Contact</button>
@@ -28,7 +30,7 @@ function Header() {
           </p>
         ) : (
           <Link to="/login">
-            <button className="header__button--login">Login</button>
+            <button className="btn btn-success">Login</button>
           </Link>
         )}
       </div>
@@ -37,3 +39,4 @@ function Header() {
 }
 
 export default Header;
+// header__button--login

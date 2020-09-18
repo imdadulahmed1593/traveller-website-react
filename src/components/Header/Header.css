@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   background-color: transparent;
   z-index: 100;

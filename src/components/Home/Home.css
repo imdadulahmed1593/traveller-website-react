@@ -65,5 +65,25 @@
   padding: 5px;
   border-radius: 50%;
   background-color: #fff;
-  margin: 0 10px;
+  margin: 10px 10px;
+}
+
+@media (max-width: 1200px) {
+  .home {
+    height: fit-content;
+  }
+  .home__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .home__infoLeft {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .home__infoRight {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

@@ -35,3 +35,17 @@
   height: 508px;
   width: 433px;
 }
+
+@media (max-width: 1000px) {
+  .search__results {
+    display: flex;
+    flex-direction: column;
+  }
+  .search__resultsImg {
+    width: 90% !important;
+    margin: 100px auto !important;
+  }
+  .gmap_canvas {
+    margin: 0px auto !important;
+  }
+}

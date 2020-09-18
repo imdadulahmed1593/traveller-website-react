@@ -32,3 +32,9 @@
   bottom: 30px;
   left: 20px;
 }
+
+@media (max-width: 1200px) {
+  .homecard {
+    width: 30vw;
+  }
+}

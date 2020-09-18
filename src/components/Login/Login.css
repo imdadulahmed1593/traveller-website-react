@@ -79,3 +79,14 @@
   color: #f9a51a;
   cursor: pointer;
 }
+
+@media (max-width: 800px) {
+  .login__form {
+    width: 80%;
+  }
+  .login__buttons > button {
+    width: 50%;
+    margin-left: 30%;
+    /* margin: 0 auto; */
+  }
+}

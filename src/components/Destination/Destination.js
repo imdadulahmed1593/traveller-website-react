@@ -40,11 +40,11 @@ function Destination() {
           <form action="">
             <label htmlFor="">Origin</label>
             <br />
-            <input type="text" />
+            <input type="text" required />
             <br />
             <label htmlFor="">Destination</label>
             <br />
-            <input type="text" />
+            <input type="text" required />
             <br />
 
             <div className="form__calendar">
@@ -59,7 +59,11 @@ function Destination() {
               </div>
             </div>
             <Link to="/search">
-              <button className="destination__formButton">Start Booking</button>
+              <input
+                type="submit"
+                value="Start Booking"
+                className="destination__formButton"
+              />
             </Link>
           </form>
         </div>
