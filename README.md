@@ -1,5 +1,5 @@
 # Travel Guru
-![alt text](src/images/creative-agency.jpg)
+![alt text](src/images/Travel-guru-clone.jpg)
 [https://travel-guru-react.web.app/](https://travel-guru-react.web.app/)
 
 A full-stack app where you can choose any destination to travel .  User panel shows the travel destination with suitable hotels to stay in . uses google, facebook and email authentication. 
