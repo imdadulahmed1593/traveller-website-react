@@ -93,4 +93,13 @@
     display: flex;
     flex-direction: column;
   }
+
+  .home__infoLeft > h1,
+  .home__infoLeft > p {
+    padding-left: 0px;
+  }
+
+  .booking__btn {
+    margin-left: 0px;
+  }
 }

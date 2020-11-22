@@ -45,6 +45,9 @@
     width: 90% !important;
     margin: 100px auto !important;
   }
+  .mapouter {
+    margin: auto;
+  }
   .gmap_canvas {
     margin: 0px auto !important;
   }

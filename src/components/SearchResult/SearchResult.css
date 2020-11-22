@@ -29,3 +29,29 @@
   font-size: 14px;
   color: lightgray;
 }
+
+@media (max-width: 500px) {
+  .searchResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .searchResult > img {
+    width: 80%;
+    object-fit: contain;
+    /* margin-right: 30px; */
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .mapouter {
+    width: 100% !important;
+  }
+  .gmap_canvas {
+    width: 100% !important;
+  }
+  .gmap_canvas > iframe {
+    width: 100% !important;
+  }
+}

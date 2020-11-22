@@ -84,6 +84,9 @@
   .login__form {
     width: 80%;
   }
+  .login__form > form {
+    width: 100%;
+  }
   .login__buttons > button {
     width: 50%;
     margin-left: 30%;

@@ -36,6 +36,7 @@
 @media (max-width: 1200px) {
   .homecard {
     width: 30vw;
+    margin: 0px;
   }
 }
 

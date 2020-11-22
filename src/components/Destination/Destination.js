@@ -65,29 +65,3 @@ function Destination() {
 }
 
 export default Destination;
-// <label htmlFor="">From</label>
-
-// <input type="text" />
-
-// {destination === "Cox’s Bazar" ? (
-//   <p>
-//     {" "}
-//     Cox’s Bazar is a town on the southeast coast of Bangladesh. It’s
-//     known for its very long, sandy beachfront, stretching from Sea
-//     Beach in the north to Kolatoli Beach in the south. Aggameda Khyang
-//     monastery is home to bronze statues and centuries-old Buddhist
-//     manuscripts. South of town, the tropical rainforest of Himchari
-//     National Park has waterfalls and many birds. North, sea turtles
-//     breed on nearby Sonadia Island.
-//   </p>
-// ) : (
-//   <p>
-//     {destination} is a small island (area only 36 km2) in the
-//     northeastern part of the Bay of Bengal, about 9 km south of the
-//     tip of the Cox's Bazar-Teknaf peninsula, and forming the
-//     southernmost part of Bangladesh. There is a small adjoining island
-//     that is separated at high tide, called Chera Dwip. It is about 8
-//     kilometres (5 miles) west of the northwest coast of Myanmar, at
-//     the mouth of the Naf River.
-//   </p>
-// )}

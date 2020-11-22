@@ -112,3 +112,42 @@
     min-width: 375px;
   }
 }
+
+@media (max-width: 768px) {
+  .destination {
+    height: fit-content;
+  }
+  .destination__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .destination__infoLeft {
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+  }
+  .destination__infoLeft > h1 {
+    font-size: 30px;
+  }
+  .destination__infoRight {
+    width: 100%;
+    margin: 20px auto;
+    padding: 0px 30px 0px 30px;
+  }
+  .destination__infoRight > form {
+    width: 100%;
+    min-width: 0px;
+  }
+  .destination__infoRight > form > input {
+    width: 90%;
+    /* min-width: 375px; */
+  }
+  .form__calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}

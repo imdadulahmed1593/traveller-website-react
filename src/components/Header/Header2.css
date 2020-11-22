@@ -83,3 +83,19 @@
     margin-top: 2rem;
   }
 }
+
+@media (max-width: 500px) {
+  .header2 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .header2__left {
+    width: 100%;
+  }
+  .header2__right {
+    width: 90%;
+    margin-top: 2rem;
+  }
+}
